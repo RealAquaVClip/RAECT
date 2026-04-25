@@ -1,7 +1,7 @@
 -- Raect/Reconciler.luau
 -- Instance reconciliation engine
 
-local Scheduler = require(script.Scheduler)
+local Scheduler = require(script.Parent.Scheduler)
 
 local Reconciler = {}
 

@@ -1,6 +1,6 @@
 -- the core createElement (h) function
 
-local createFragment = require(script.createFragment)
+local createFragment = require(script.Parent.createFragment)
 
 local function createElement(elementType, props, children)
 	if elementType == nil then
@@ -46,6 +46,6 @@ local function createElement(elementType, props, children)
 end
 
 -- JSX-like aliases
-createElement.Fragment = createFragment
+createElement.Fragment = require(script.Parent.createFragment)
 
 return createElement
